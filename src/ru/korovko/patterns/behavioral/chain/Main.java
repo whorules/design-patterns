@@ -22,7 +22,7 @@ public class Main {
         request = new Request(RequestType.PURCHASE, 1000);
         director.handleRequest(request);
 
-        request = new Request(RequestType.CONFERENCE, 2000);
+        request = new Request(RequestType.PURCHASE, 2000);
         director.handleRequest(request);
     }
 }
