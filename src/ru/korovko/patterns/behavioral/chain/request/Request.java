@@ -1,5 +1,12 @@
 package ru.korovko.patterns.behavioral.chain.request;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.ToString;
+
+@AllArgsConstructor
+@Getter
+@ToString
 public class Request {
 
     /**
@@ -10,25 +17,4 @@ public class Request {
      * Amount of requests
      */
     private final double amount;
-
-    public Request(RequestType requestType, double amount) {
-        this.requestType = requestType;
-        this.amount = amount;
-    }
-
-    public RequestType getRequestType() {
-        return requestType;
-    }
-
-    public double getAmount() {
-        return amount;
-    }
-
-    @Override
-    public String toString() {
-        return "Request{" +
-                "requestType=" + requestType +
-                ", amount=" + amount +
-                '}';
-    }
 }

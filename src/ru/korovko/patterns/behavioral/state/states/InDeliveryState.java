@@ -11,7 +11,7 @@ public class InDeliveryState extends State {
 
     @Override
     public void handleRequest() {
-        order.setState(new DeliveredState(order));
+        order.setCurrentState(new DeliveredState(order));
     }
 
     @Override

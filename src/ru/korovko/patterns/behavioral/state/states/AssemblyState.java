@@ -11,7 +11,7 @@ public class AssemblyState extends State {
 
     @Override
     public void handleRequest() {
-        order.setState(new InDeliveryState(order));
+        order.setCurrentState(new InDeliveryState(order));
     }
 
     @Override

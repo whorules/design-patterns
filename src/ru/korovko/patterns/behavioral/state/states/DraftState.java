@@ -11,7 +11,7 @@ public class DraftState extends State {
 
     @Override
     public void handleRequest() {
-        order.setState(new AssemblyState(order));
+        order.setCurrentState(new AssemblyState(order));
     }
 
     @Override
